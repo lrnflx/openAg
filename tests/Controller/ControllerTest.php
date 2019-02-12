@@ -15,6 +15,6 @@ class ControllerTest extends PantherTestCase
 
         // $this->assertEquals(200, $client->getResponse()->getStatusCode());
         
-        $this->assertSame('Homepage', $client->getCrawler()->filter('h1')->text()); 
+        $this->assertSame('Homepage YO', $client->getCrawler()->filter('h1')->text()); 
     }
 }
