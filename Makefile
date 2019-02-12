@@ -1,10 +1,10 @@
-.PHONY: testunit testphpm testphpcs
+.PHONY: phpunit phpmetrics phpcs
 
-testunit:
+phpunit:
 	bin/phpunit --coverage-html=var/phpunitest
 
-testphpm:
+phpmetrics:
 	vendor/bin/phpmetrics --report-html=var/build ./src
 
-testphpcs:
+phpcs:
 	vendor/bin/phpcs --standard=PSR2 src
