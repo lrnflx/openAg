@@ -3,7 +3,7 @@ namespace App\Tests\Controller;
 
 use Symfony\Component\Panther\PantherTestCase;
 
-class ControllerTest extends PantherTestCase
+class HomeControllerTest extends PantherTestCase
 {
     public function testIndex()
     {
